@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Machinehack DAC 2021 - Sales Prediction</title>
+    </head>
+    <body bgcolor='biege' text-align='center'>
+        <form action="{{url_for('predict')}}" method='post'>
+            <table>
+                <tr><td><label><B>Machinehack DAC 2021 - Sales Prediction</B></label></td></tr>
+                <tr><td></td></tr><br>
+                <tr><td>Please fill the below details and Press <i>Predict</i> button to predict the sales
+                </td>
+                </tr>
+                <tr></tr><br>
+                <tr>
+                    <td>
+                        <label>Item Identification Number</label>
+                    </td>
+                    <td>
+                        <input type = "text" name = "Item_ID" />
+                    </td>
+                </tr><br>
+
+            <tr><td><label>Item Weight</label></td>
+                <td><input type = "text" name = "Item_W" /></td></tr><br>
+
+            <tr><td><label>Type of the Item Type</label></td>
+                <td><input type = "text" name = "Item_Type" /></td></tr><br>                 
+
+            <tr><td><label>MRP of the Product</label></td>
+                <td><input type = "text" name = "Item_MRP" /></td></tr><br>
+                    
+            <tr><td><label>Outlet ID</label></td>
+                <td><input type = "text" name = "Outlet_ID" /></td></tr><br>
+                   
+            <tr><td><label>Outlet Establishment year</label></td>
+                <td><input type = "text" name = "Outlet_Year" /></td></tr><br>
+                
+            <tr><td><label>Size of the outlet</label></td>
+                <td><input type = "text" name = "Outlet_Size" /></td></tr><br>   
+
+            <tr><td><label>Type of the outlet Location</label></td>
+                <td><input type = "text" name = "Outlet_Location_Type" /></td></tr><br> 
+
+            <tr><td><label>Click predict for sales</label></td><td><button type = "submit">Predict</button></td></tr>
+            </table>
+
+        </form>
+        <label bgcolor='grey'><b>{{prediction}}</b></label>
+    </body>
+</html>
