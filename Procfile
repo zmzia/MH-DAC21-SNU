@@ -1,1 +1,1 @@
-web: gunicorn app:mhsnu_app
+web: gunicorn mhsnu_app:app
