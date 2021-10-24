@@ -40,6 +40,7 @@ def predict():
     res = model.predict(test_df)
     print(res[0])
     #return str(res[0])
+    print(isinstance(res[0], str))
     print(isinstance(res[0], float))
     if isinstance(res[0], float):
         mess = "Predicted Sales is {} ".format(str(res[0]))
