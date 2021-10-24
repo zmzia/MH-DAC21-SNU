@@ -40,10 +40,11 @@ def predict():
     res = model.predict(test_df)
     print(res[0])
     #return str(res[0])
+    print(isinstance(res[0], float))
     if isinstance(res[0], float):
         mess = "Predicted Sales is {} ".format(str(res[0]))
     else:
-        mess = "Please enter valid input"
+        mess = "Please enter valid input."
     return render_template('index.html', prediction = mess)
 
 if __name__ == "__main__":
