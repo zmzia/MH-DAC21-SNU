@@ -46,6 +46,7 @@ def predict():
         mess = "Predicted Sales is {} ".format(str(res[0]))
     else:
         mess = "Please enter valid input."
+    mess = "Predicted Sales is {} ".format(str(res[0]))
     return render_template('index.html', prediction = mess)
 
 if __name__ == "__main__":
